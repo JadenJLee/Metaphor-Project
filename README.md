@@ -2,7 +2,7 @@ Hi! This is my simple python flask application to allow metaphor to display news
 
 I wanted to add summarization via chatgpt, but it went over the limit for tokens/requests per minute.
 
-In the future I plan on adding:
+In the future I plan on adding if I spent longer than 3 hours on this project:
 - Test cases
 - ChatGPT summarization
 - A fancier UI

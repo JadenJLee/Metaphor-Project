@@ -1,4 +1,4 @@
-Hi! This is my simple python flask application to allow metaphor to display news articles written about cars on current day. Maybe I can add a widget for my homescreen so I can view these articles instead of the political articles I see on Apple News that I don't really have an interest in.
+Hi! This is my simple python flask application to allow metaphor to display news articles written about cars on current day. Maybe I can add a widget for my IOS homescreen so I can view these articles instead of the political articles I see on Apple News that I don't really have an interest in.
 
 I wanted to add summarization via chatgpt, but it went over the limit for tokens/requests per minute.
 

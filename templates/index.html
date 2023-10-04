@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Today's Car News </title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+        // Function to update the title with the current date
+        function updateTitle() {
+            const currentDate = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const formattedDate = currentDate.toLocaleDateString(undefined, options);
+            document.title = `Today's Car News: ${formattedDate}`;
+        }
+        
+        // Call the function to update the title when the page loads
+        window.addEventListener('load', updateTitle);
+    </script>
+</head>
+<body class="bg-gray-100 p-4">
+    <h1 class="text-3xl mb-4">Today's Car News</h1>
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {% for result, image in results %}
+            <div class="bg-white rounded shadow p-4">
+                <p class="text-blue-500 mb-2"><a href="{{ result.url }}" target="_blank">{{ result.title }}</a></p>
+                <img src="{{ image }}" alt="Some image">
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

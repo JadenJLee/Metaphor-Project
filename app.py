@@ -7,7 +7,6 @@ from bs4 import BeautifulSoup
 
 app = Flask(__name__)
 
-openai.api_key = "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"
 metaphor = Metaphor("e20637d1-1473-4095-8e0e-389e77d244f6")
 
 query = "Here is the latest news in the world of cars:"
